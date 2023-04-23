@@ -24,10 +24,10 @@ P.scale     = 1;                    % param to scale voltage - optimise once the
 
 % prior covariance
 %--------------------------------------------------------------------------
-pC.A_EE    	= 1;                    % excitatory self-coupling 
+pC.A_EE     = 1;                    % excitatory self-coupling 
 pC.A_EIp    = 1;                    % inhibitory parvalbumin to excitation coupling           
-pC.A_IpE  	 = 1;                    % excitatory to inhibitory parvalbumin coupling  
-pC.A_IpIp  	= 1;                    % inhibitory parvalbumin self-coupling  
+pC.A_IpE    = 1;                    % excitatory to inhibitory parvalbumin coupling  
+pC.A_IpIp   = 1;                    % inhibitory parvalbumin self-coupling  
 pC.A_EIs    = 1;                    % inhibitory somatostatin to excitation coupling 
 pC.A_IsE    = 1;                    % excitatory to inhibitory somatostatin coupling
 pC.A_IsIp   = 0;                    % inhibitory parvalbumin to inhibitory somatostatin coupling
@@ -97,10 +97,10 @@ Ep1.dFdpp = dFdpp;
 
 % model parameters (free parameters)
 %--------------------------------------------------------------------------
-P.A_EE     	= 0.1;                  % excitatory self-coupling 
+P.A_EE      = 0.1;                  % excitatory self-coupling 
 P.A_EIp    	= -0.1;                 % inhibitory parvalbumin to excitation coupling         
-P.A_IpE  	  = 0.1;                  % excitatory to inhibitory parvalbumin coupling  
-P.A_IpIp  	 = -0.1;                 % inhibitory parvalbumin self-coupling  
+P.A_IpE     = 0.1;                  % excitatory to inhibitory parvalbumin coupling  
+P.A_IpIp    = -0.1;                 % inhibitory parvalbumin self-coupling  
 P.A_EIs     = -0.1;                 % inhibitory somatostatin to excitation coupling 
 P.A_IsE     = 0.1;                  % excitatory to inhibitory somatostatin coupling
 P.A_IsIp    = 0;                    % inhibitory parvalbumin to inhibitory somatostatin coupling
@@ -113,10 +113,10 @@ P.scale     = 1;                    % param to scale voltage - optimise once the
 
 % prior covariance
 %--------------------------------------------------------------------------
-pC.A_EE    	= 1;                    % excitatory self-coupling 
+pC.A_EE     = 1;                    % excitatory self-coupling 
 pC.A_EIp    = 1;                    % inhibitory parvalbumin to excitation coupling           
-pC.A_IpE  	 = 1;                    % excitatory to inhibitory parvalbumin coupling  
-pC.A_IpIp  	= 1;                    % inhibitory parvalbumin self-coupling  
+pC.A_IpE    = 1;                    % excitatory to inhibitory parvalbumin coupling  
+pC.A_IpIp   = 1;                    % inhibitory parvalbumin self-coupling  
 pC.A_EIs    = 1;                    % inhibitory somatostatin to excitation coupling 
 pC.A_IsE    = 1;                    % excitatory to inhibitory somatostatin coupling
 pC.A_IsIp   = 0;                    % inhibitory parvalbumin to inhibitory somatostatin coupling
