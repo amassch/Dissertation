@@ -8,10 +8,10 @@ function [Ep1, Ep2] = integrate_invert_EII(data1, data2)
 
 % model parameters (free parameters)
 %--------------------------------------------------------------------------
-P.A_EE    	= 0.1;                  % excitatory self-coupling 
+P.A_EE    	 = 0.1;                  % excitatory self-coupling 
 P.A_EIp    	= -0.1;                 % inhibitory parvalbumin to excitation coupling         
-P.A_IpE  	= 0.1;                  % excitatory to inhibitory parvalbumin coupling  
-P.A_IpIp  	= -0.1;                 % inhibitory parvalbumin self-coupling  
+P.A_IpE  	  = 0.1;                  % excitatory to inhibitory parvalbumin coupling  
+P.A_IpIp  	 = -0.1;                 % inhibitory parvalbumin self-coupling  
 P.A_EIs     = -0.1;                 % inhibitory somatostatin to excitation coupling 
 P.A_IsE     = 0.1;                  % excitatory to inhibitory somatostatin coupling
 P.A_IsIp    = 0;                    % inhibitory parvalbumin to inhibitory somatostatin coupling
@@ -26,7 +26,7 @@ P.scale     = 1;                    % param to scale voltage - optimise once the
 %--------------------------------------------------------------------------
 pC.A_EE    	= 1;                    % excitatory self-coupling 
 pC.A_EIp    = 1;                    % inhibitory parvalbumin to excitation coupling           
-pC.A_IpE  	= 1;                    % excitatory to inhibitory parvalbumin coupling  
+pC.A_IpE  	 = 1;                    % excitatory to inhibitory parvalbumin coupling  
 pC.A_IpIp  	= 1;                    % inhibitory parvalbumin self-coupling  
 pC.A_EIs    = 1;                    % inhibitory somatostatin to excitation coupling 
 pC.A_IsE    = 1;                    % excitatory to inhibitory somatostatin coupling
@@ -36,7 +36,7 @@ pC.A_IpIs   = 1;                    % inhibitory somatostatin to inhibitory parv
 pC.C_e      = 1;                    % external excitation coupling
 pC.C_Ip     = 1;                    % external inhibitory parvalbumin coupling
 pC.C_Is     = 1;                    % external inhibitory somatostatin coupling
-pC.scale = 1;                       % change to 0 to fix this to a value for the whole datasetn
+pC.scale    = 1;                    % change to 0 to fix this to a value for the whole datasetn
 
 M.IS = 'spm_int_ode';               % integrator
 M.FS = [];                          % feature selection (not in this case)
@@ -97,10 +97,10 @@ Ep1.dFdpp = dFdpp;
 
 % model parameters (free parameters)
 %--------------------------------------------------------------------------
-P.A_EE    	= 0.1;                  % excitatory self-coupling 
+P.A_EE     	= 0.1;                  % excitatory self-coupling 
 P.A_EIp    	= -0.1;                 % inhibitory parvalbumin to excitation coupling         
-P.A_IpE  	= 0.1;                  % excitatory to inhibitory parvalbumin coupling  
-P.A_IpIp  	= -0.1;                 % inhibitory parvalbumin self-coupling  
+P.A_IpE  	  = 0.1;                  % excitatory to inhibitory parvalbumin coupling  
+P.A_IpIp  	 = -0.1;                 % inhibitory parvalbumin self-coupling  
 P.A_EIs     = -0.1;                 % inhibitory somatostatin to excitation coupling 
 P.A_IsE     = 0.1;                  % excitatory to inhibitory somatostatin coupling
 P.A_IsIp    = 0;                    % inhibitory parvalbumin to inhibitory somatostatin coupling
@@ -115,7 +115,7 @@ P.scale     = 1;                    % param to scale voltage - optimise once the
 %--------------------------------------------------------------------------
 pC.A_EE    	= 1;                    % excitatory self-coupling 
 pC.A_EIp    = 1;                    % inhibitory parvalbumin to excitation coupling           
-pC.A_IpE  	= 1;                    % excitatory to inhibitory parvalbumin coupling  
+pC.A_IpE  	 = 1;                    % excitatory to inhibitory parvalbumin coupling  
 pC.A_IpIp  	= 1;                    % inhibitory parvalbumin self-coupling  
 pC.A_EIs    = 1;                    % inhibitory somatostatin to excitation coupling 
 pC.A_IsE    = 1;                    % excitatory to inhibitory somatostatin coupling
@@ -125,7 +125,7 @@ pC.A_IpIs   = 1;                    % inhibitory somatostatin to inhibitory parv
 pC.C_e      = 1;                    % external excitation coupling
 pC.C_Ip     = 1;                    % external inhibitory parvalbumin coupling
 pC.C_Is     = 1;                    % external inhibitory somatostatin coupling
-pC.scale = 1;                       % change to 0 to fix this to a value for the whole datasetn
+pC.scale    = 1;                    % change to 0 to fix this to a value for the whole datasetn
 
 M.IS = 'spm_int_ode';               % integrator
 M.FS = [];                          % feature selection (not in this case)
