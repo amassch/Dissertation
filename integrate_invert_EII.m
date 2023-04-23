@@ -8,10 +8,10 @@ function [Ep1, Ep2] = integrate_invert_EII(data1, data2)
 
 % model parameters (free parameters)
 %--------------------------------------------------------------------------
-P.A_EE    	 = 0.1;                  % excitatory self-coupling 
+P.A_EE      = 0.1;                  % excitatory self-coupling 
 P.A_EIp    	= -0.1;                 % inhibitory parvalbumin to excitation coupling         
 P.A_IpE  	  = 0.1;                  % excitatory to inhibitory parvalbumin coupling  
-P.A_IpIp  	 = -0.1;                 % inhibitory parvalbumin self-coupling  
+P.A_IpIp    = -0.1;                 % inhibitory parvalbumin self-coupling  
 P.A_EIs     = -0.1;                 % inhibitory somatostatin to excitation coupling 
 P.A_IsE     = 0.1;                  % excitatory to inhibitory somatostatin coupling
 P.A_IsIp    = 0;                    % inhibitory parvalbumin to inhibitory somatostatin coupling
